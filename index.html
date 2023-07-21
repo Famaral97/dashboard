@@ -9,37 +9,66 @@
 <script type="module">
 
 // Declare the chart dimensions and margins.
-const width = 640;
-const height = 400;
+const width = 800;
+const height = 900;
 const marginTop = 20;
 const marginRight = 20;
 const marginBottom = 30;
 const marginLeft = 40;
 
+const x = 0;
+const z = 1;
+
 let svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height)
 
-let europeProjection = d3.geoMercator()
+let europeProjection = d3
+  .geoConicConformal()
+  .parallels([40, 68])
+  .rotate([-10 + x / z / 15, 0])
   .center([ 13, 52 ])
   .scale([ width / 1.5 ]) 
   .translate([ width / 2, height / 2 ])
 
 let geoJsonUrl = ''
 
+
+/* fetch('./CNTR_RG_10M_2020_4326.geojson')
+    .then((response) => response.json())
+    .then((json) => console.log(json)); */
+
 const pathGenerator = d3.geoPath().projection(europeProjection)
-geoJsonUrl = "https://gist.githubusercontent.com/spiker830/3eab0cb407031bf9f2286f98b9d0558a/raw/7edae936285e77be675366550e20f9166bed0ed5/europe_features.json"
+// geoJsonUrl = "https://gist.githubusercontent.com/spiker830/3eab0cb407031bf9f2286f98b9d0558a/raw/7edae936285e77be675366550e20f9166bed0ed5/europe_features.json"
+geoJsonUrl = "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"
 
 d3.json(geoJsonUrl).then(geojson => {
   // Tell D3 to render a path for each GeoJSON feature
   svg.selectAll("path")
-    .data(geojson.features)
-    .enter()
-    .append("path")
-    .attr("d", pathGenerator) // This is where the magic happens
-    .attr("stroke", "grey") // Color of the lines themselves
-    .attr("fill", "white") // Color uses to fill in the lines
+  .data(geojson.features)
+    .join("path")
+      .attr("fill", "#eee")
+      .attr("d", pathGenerator)
+      .attr("stroke", "black")
+      .attr("stroke-linejoin", "round")
+    .append("title")
+      .text(d => d.properties.name);
 })
 
+Object.assign(svg.node(), {
+  value: null,
+  onclick: event => {
+    if (event.target.tagName == 'path') {
+      svg.selectAll("path").attr("fill", "#eee");
+      d3.select(event.target).attr('fill', 'gray');
+      
+      // Update views' value
+      event.currentTarget.value = d3.select(event.target).datum().properties;
+      
+      // Dispatch event
+      event.currentTarget.dispatchEvent(new CustomEvent("input"));
+    }
+  }
+})
 
 </script>
