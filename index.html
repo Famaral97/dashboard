@@ -42,17 +42,52 @@ const pathGenerator = d3.geoPath().projection(europeProjection)
 // geoJsonUrl = "https://gist.githubusercontent.com/spiker830/3eab0cb407031bf9f2286f98b9d0558a/raw/7edae936285e77be675366550e20f9166bed0ed5/europe_features.json"
 // geoJsonUrl = "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"
 // geoJsonUrl = "https://raw.githubusercontent.com/leakyMirror/map-of-europe/master/GeoJSON/europe.geojson"
-geoJsonUrl = "https://raw.githubusercontent.com/Famaral97/dashboard/master/europe-outline-with-countries_223.geojson"
+// geoJsonUrl = "https://raw.githubusercontent.com/Famaral97/dashboard/master/europe-outline-with-countries_223.geojson"
+// geoJsonUrl = "https://raw.githubusercontent.com/Famaral97/dashboard/master/countries.geojson"
+geoJsonUrl = "https://raw.githubusercontent.com/Famaral97/dashboard/master/CNTR_RG_10M_2020_4326.geojson"
 
 d3.json(geoJsonUrl).then(geojson => {
   // Tell D3 to render a path for each GeoJSON feature
   console.log(geojson)
+
+  let filtered = geojson.features.filter(country => 
+    country.id === "BE" ||
+    country.id === "BG" ||
+    country.id === "CZ" ||
+    country.id === "DK" ||
+    country.id === "DE" ||
+    country.id === "EE" ||
+    country.id === "IE" ||
+    country.id === "EL" ||
+    country.id === "ES" ||
+    country.id === "FR" ||
+    country.id === "HR" ||
+    country.id === "IT" ||
+    country.id === "CY" ||
+    country.id === "LV" ||
+    country.id === "LT" ||
+    country.id === "LU" ||
+    country.id === "HU" ||
+    country.id === "MT" ||
+    country.id === "NL" ||
+    country.id === "AT" ||
+    country.id === "PL" ||
+    country.id === "PT" ||
+    country.id === "RO" ||
+    country.id === "SI" ||
+    country.id === "SK" ||
+    country.id === "FI" ||
+    country.id === "SE" 
+  )
+
+  console.log(filtered)
+
   svg.selectAll("path")
-  .data(geojson.features)
+  .data(filtered)
     .join("path")
-      .attr("fill", "#eee")
+      .attr("fill", "#b7d8ff")
       .attr("d", pathGenerator)
-      .attr("stroke", "black")
+      .attr("stroke", "white")
       .attr("stroke-linejoin", "round")
     .append("title")
       .text(d => d.properties.name);
@@ -62,8 +97,8 @@ Object.assign(svg.node(), {
   value: null,
   onclick: event => {
     if (event.target.tagName == 'path') {
-      svg.selectAll("path").attr("fill", "#eee");
-      d3.select(event.target).attr('fill', 'gray');
+      svg.selectAll("path").attr("fill", "#b7d8ff");
+      d3.select(event.target).attr('fill', '#004494');
       
       // Update views' value
       event.currentTarget.value = d3.select(event.target).datum().properties;
