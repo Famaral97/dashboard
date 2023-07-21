@@ -85,7 +85,7 @@ d3.json(geoJsonUrl).then(geojson => {
   svg.selectAll("path")
   .data(filtered)
     .join("path")
-      .attr("fill", "#b7d8ff")
+      .attr("fill", "#BFD0E4")
       .attr("d", pathGenerator)
       .attr("stroke", "white")
       .attr("stroke-linejoin", "round")
@@ -97,7 +97,7 @@ Object.assign(svg.node(), {
   value: null,
   onclick: event => {
     if (event.target.tagName == 'path') {
-      svg.selectAll("path").attr("fill", "#b7d8ff");
+      svg.selectAll("path").attr("fill", "#BFD0E4");
       d3.select(event.target).attr('fill', '#004494');
       
       // Update views' value
