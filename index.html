@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <head>
     <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container"></div>
+    <div id="text-area"></div>
 </body>
 <script src="d3.js"></script>
 <script type="module">
@@ -48,7 +49,6 @@ geoJsonUrl = "https://raw.githubusercontent.com/Famaral97/dashboard/master/CNTR_
 
 d3.json(geoJsonUrl).then(geojson => {
   // Tell D3 to render a path for each GeoJSON feature
-  console.log(geojson)
 
   let filtered = geojson.features.filter(country => 
     country.id === "BE" ||
@@ -80,7 +80,6 @@ d3.json(geoJsonUrl).then(geojson => {
     country.id === "SE" 
   )
 
-  console.log(filtered)
 
   svg.selectAll("path")
   .data(filtered)
@@ -89,8 +88,9 @@ d3.json(geoJsonUrl).then(geojson => {
       .attr("d", pathGenerator)
       .attr("stroke", "white")
       .attr("stroke-linejoin", "round")
-    .append("title")
-      .text(d => d.properties.name);
+      .attr("country-code", d => d.id)
+    // .append("title")
+    //   .text(d => d.properties.CNTR_ID);
 })
 
 Object.assign(svg.node(), {
@@ -100,11 +100,7 @@ Object.assign(svg.node(), {
       svg.selectAll("path").attr("fill", "#BFD0E4");
       d3.select(event.target).attr('fill', '#004494');
       
-      // Update views' value
-      event.currentTarget.value = d3.select(event.target).datum().properties;
-      
-      // Dispatch event
-      event.currentTarget.dispatchEvent(new CustomEvent("input"));
+      document.getElementById("text-area").innerHTML = event.target.getAttribute("country-code")
     }
   }
 })
