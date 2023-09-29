@@ -45,50 +45,26 @@ const pathGenerator = d3.geoPath().projection(europeProjection)
 // geoJsonUrl = "https://raw.githubusercontent.com/leakyMirror/map-of-europe/master/GeoJSON/europe.geojson"
 // geoJsonUrl = "https://raw.githubusercontent.com/Famaral97/dashboard/master/europe-outline-with-countries_223.geojson"
 // geoJsonUrl = "https://raw.githubusercontent.com/Famaral97/dashboard/master/countries.geojson"
-geoJsonUrl = "https://raw.githubusercontent.com/Famaral97/dashboard/master/CNTR_RG_10M_2020_4326.geojson"
+geoJsonUrl = "https://raw.githubusercontent.com/Famaral97/dashboard/master/custom_eu.geojson"
 
 d3.json(geoJsonUrl).then(geojson => {
   // Tell D3 to render a path for each GeoJSON feature
 
   let filtered = geojson.features.filter(country => 
-    country.id === "BE" ||
-    country.id === "BG" ||
-    country.id === "CZ" ||
-    country.id === "DK" ||
-    country.id === "DE" ||
-    country.id === "EE" ||
-    country.id === "IE" ||
-    country.id === "EL" ||
-    country.id === "ES" ||
-    country.id === "FR" ||
-    country.id === "HR" ||
-    country.id === "IT" ||
-    country.id === "CY" ||
-    country.id === "LV" ||
-    country.id === "LT" ||
-    country.id === "LU" ||
-    country.id === "HU" ||
-    country.id === "MT" ||
-    country.id === "NL" ||
-    country.id === "AT" ||
-    country.id === "PL" ||
-    country.id === "PT" ||
-    country.id === "RO" ||
-    country.id === "SI" ||
-    country.id === "SK" ||
-    country.id === "FI" ||
-    country.id === "SE" 
+    country.properties.EU_STAT === "T"
   )
 
+  console.log(geojson.features)
 
   svg.selectAll("path")
-  .data(filtered)
+  .data(geojson.features)
     .join("path")
-      .attr("fill", "#BFD0E4")
+      .attr("fill", country => country.properties.Color)
       .attr("d", pathGenerator)
       .attr("stroke", "white")
       .attr("stroke-linejoin", "round")
       .attr("country-code", d => d.id)
+      .attr("eu-state", d => d.properties.EU_STAT)
     // .append("title")
     //   .text(d => d.properties.CNTR_ID);
 })
