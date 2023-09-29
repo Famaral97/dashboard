@@ -1,0 +1,90 @@
+{
+  "id": "MT",
+  "parentDivision": null,
+  "districts": null,
+  "seatsTotal": 6,
+  "seatsPercentEU": 0.8,
+  "groupSummary": {
+    "title": "SEATS_BY_GROUP_TITLE",
+    "status": "CONSTITUTIVE",
+    "time": "2019-07-02T10:00:00.000+0200",
+    "groupDistribution": [
+      {
+        "id": "EPP",
+        "seatsTotal": 2,
+        "seatsPercentEU": 0.27
+      },
+      {
+        "id": "SD",
+        "seatsTotal": 4,
+        "seatsPercentEU": 0.53
+      }
+    ]
+  },
+  "partySummary": {
+    "breakdownByPartyHeader": {
+      "title": "BREAKDOWN_BY_PARTY_TITLE",
+      "status": "CONSTITUTIVE",
+      "time": "2019-07-02T10:00:00.000+0200"
+    },
+    "resultsByPartyHeader": {
+      "title": "RESULTS_BY_PARTY_TITLE",
+      "status": "OFFICIAL",
+      "time": "2019-05-29T16:46:40.851+0200"
+    },
+    "seatsByParty": [
+      {
+        "id": "MT01",
+        "type": "PARTY",
+        "seatsTotal": 2,
+        "votesPercent": 37.9,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "EPP",
+            "seatsTotal": 2,
+            "seatsPercentEU": 0.27
+          }
+        ]
+      },
+      {
+        "id": "MT02",
+        "type": "PARTY",
+        "seatsTotal": 4,
+        "votesPercent": 54.29,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "SD",
+            "seatsTotal": 4,
+            "seatsPercentEU": 0.53
+          }
+        ]
+      },
+      {
+        "id": "MT03",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 0.72,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "MT04",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 2.03,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "MT90",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 5.06,
+        "members": null,
+        "groupDistribution": null
+      }
+    ]
+  }
+}

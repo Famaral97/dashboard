@@ -1,0 +1,188 @@
+{
+  "id": "DK",
+  "parentDivision": null,
+  "districts": null,
+  "seatsTotal": 13,
+  "seatsPercentEU": 1.73,
+  "groupSummary": {
+    "title": "SEATS_BY_GROUP_TITLE",
+    "status": "CONSTITUTIVE",
+    "time": "2019-07-02T10:00:00.000+0200",
+    "groupDistribution": [
+      {
+        "id": "EPP",
+        "seatsTotal": 1,
+        "seatsPercentEU": 0.13
+      },
+      {
+        "id": "SD",
+        "seatsTotal": 3,
+        "seatsPercentEU": 0.4
+      },
+      {
+        "id": "ALDE",
+        "seatsTotal": 5,
+        "seatsPercentEU": 0.67
+      },
+      {
+        "id": "GUENGL",
+        "seatsTotal": 1,
+        "seatsPercentEU": 0.13
+      },
+      {
+        "id": "GREENSEFA",
+        "seatsTotal": 2,
+        "seatsPercentEU": 0.27
+      },
+      {
+        "id": "ENF",
+        "seatsTotal": 1,
+        "seatsPercentEU": 0.13
+      }
+    ]
+  },
+  "partySummary": {
+    "breakdownByPartyHeader": {
+      "title": "BREAKDOWN_BY_PARTY_TITLE",
+      "status": "CONSTITUTIVE",
+      "time": "2019-07-02T10:00:00.000+0200"
+    },
+    "resultsByPartyHeader": {
+      "title": "RESULTS_BY_PARTY_TITLE",
+      "status": "OFFICIAL",
+      "time": "2019-09-25T18:12:30.415+0200"
+    },
+    "seatsByParty": [
+      {
+        "id": "DK01",
+        "type": "PARTY",
+        "seatsTotal": 3,
+        "votesPercent": 21.48,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "SD",
+            "seatsTotal": 3,
+            "seatsPercentEU": 0.4
+          }
+        ]
+      },
+      {
+        "id": "DK02",
+        "type": "PARTY",
+        "seatsTotal": 2,
+        "votesPercent": 10.07,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "ALDE",
+            "seatsTotal": 2,
+            "seatsPercentEU": 0.27
+          }
+        ]
+      },
+      {
+        "id": "DK03",
+        "type": "PARTY",
+        "seatsTotal": 1,
+        "votesPercent": 6.18,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "EPP",
+            "seatsTotal": 1,
+            "seatsPercentEU": 0.13
+          }
+        ]
+      },
+      {
+        "id": "DK04",
+        "type": "PARTY",
+        "seatsTotal": 2,
+        "votesPercent": 13.23,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "GREENSEFA",
+            "seatsTotal": 2,
+            "seatsPercentEU": 0.27
+          }
+        ]
+      },
+      {
+        "id": "DK05",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 2.2,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "DK06",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 3.7,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "DK07",
+        "type": "PARTY",
+        "seatsTotal": 1,
+        "votesPercent": 10.76,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "ENF",
+            "seatsTotal": 1,
+            "seatsPercentEU": 0.13
+          }
+        ]
+      },
+      {
+        "id": "DK08",
+        "type": "PARTY",
+        "seatsTotal": 3,
+        "votesPercent": 23.5,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "ALDE",
+            "seatsTotal": 3,
+            "seatsPercentEU": 0.4
+          }
+        ]
+      },
+      {
+        "id": "DK09",
+        "type": "PARTY",
+        "seatsTotal": 1,
+        "votesPercent": 5.51,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "GUENGL",
+            "seatsTotal": 1,
+            "seatsPercentEU": 0.13
+          }
+        ]
+      },
+      {
+        "id": "DK10",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 3.37,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "DK90",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 0.0,
+        "members": null,
+        "groupDistribution": null
+      }
+    ]
+  }
+}

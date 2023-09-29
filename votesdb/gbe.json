@@ -1,0 +1,87 @@
+{
+  "id": "GBE",
+  "parentDivision": "BE",
+  "districts": null,
+  "seatsTotal": 1,
+  "seatsPercentEU": 0.13,
+  "groupSummary": {
+    "title": "SEATS_BY_GROUP_TITLE",
+    "status": "CONSTITUTIVE",
+    "time": "2019-07-02T10:00:00.000+0200",
+    "groupDistribution": [
+      {
+        "id": "EPP",
+        "seatsTotal": 1,
+        "seatsPercentEU": 0.13
+      }
+    ]
+  },
+  "partySummary": {
+    "breakdownByPartyHeader": {
+      "title": "BREAKDOWN_BY_PARTY_TITLE",
+      "status": "CONSTITUTIVE",
+      "time": "2019-07-02T10:00:00.000+0200"
+    },
+    "resultsByPartyHeader": {
+      "title": "RESULTS_BY_PARTY_TITLE",
+      "status": "OFFICIAL",
+      "time": "2019-06-14T10:07:42.115+0200"
+    },
+    "seatsByParty": [
+      {
+        "id": "BE15",
+        "type": "PARTY",
+        "seatsTotal": 1,
+        "votesPercent": 34.9,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "EPP",
+            "seatsTotal": 1,
+            "seatsPercentEU": 0.13
+          }
+        ]
+      },
+      {
+        "id": "BE16",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 11.4,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "BE17",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 11.5,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "BE18",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 13.1,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "BE19",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 16.4,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "BE92",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 12.7,
+        "members": null,
+        "groupDistribution": null
+      }
+    ]
+  }
+}

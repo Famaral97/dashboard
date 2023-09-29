@@ -1,0 +1,215 @@
+{
+  "id": "LT",
+  "parentDivision": null,
+  "districts": null,
+  "seatsTotal": 11,
+  "seatsPercentEU": 1.46,
+  "groupSummary": {
+    "title": "SEATS_BY_GROUP_TITLE",
+    "status": "CONSTITUTIVE",
+    "time": "2019-07-02T10:00:00.000+0200",
+    "groupDistribution": [
+      {
+        "id": "EPP",
+        "seatsTotal": 4,
+        "seatsPercentEU": 0.53
+      },
+      {
+        "id": "SD",
+        "seatsTotal": 2,
+        "seatsPercentEU": 0.27
+      },
+      {
+        "id": "ECR",
+        "seatsTotal": 1,
+        "seatsPercentEU": 0.13
+      },
+      {
+        "id": "ALDE",
+        "seatsTotal": 2,
+        "seatsPercentEU": 0.27
+      },
+      {
+        "id": "GREENSEFA",
+        "seatsTotal": 2,
+        "seatsPercentEU": 0.27
+      }
+    ]
+  },
+  "partySummary": {
+    "breakdownByPartyHeader": {
+      "title": "BREAKDOWN_BY_PARTY_TITLE",
+      "status": "CONSTITUTIVE",
+      "time": "2019-07-02T10:00:00.000+0200"
+    },
+    "resultsByPartyHeader": {
+      "title": "RESULTS_BY_PARTY_TITLE",
+      "status": "OFFICIAL",
+      "time": "2019-06-03T11:52:35.827+0200"
+    },
+    "seatsByParty": [
+      {
+        "id": "LT01",
+        "type": "PARTY",
+        "seatsTotal": 1,
+        "votesPercent": 8.99,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "ALDE",
+            "seatsTotal": 1,
+            "seatsPercentEU": 0.13
+          }
+        ]
+      },
+      {
+        "id": "LT02",
+        "type": "PARTY",
+        "seatsTotal": 1,
+        "votesPercent": 5.5,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "ECR",
+            "seatsTotal": 1,
+            "seatsPercentEU": 0.13
+          }
+        ]
+      },
+      {
+        "id": "LT03",
+        "type": "PARTY",
+        "seatsTotal": 1,
+        "votesPercent": 6.59,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "ALDE",
+            "seatsTotal": 1,
+            "seatsPercentEU": 0.13
+          }
+        ]
+      },
+      {
+        "id": "LT04",
+        "type": "PARTY",
+        "seatsTotal": 2,
+        "votesPercent": 15.88,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "SD",
+            "seatsTotal": 2,
+            "seatsPercentEU": 0.27
+          }
+        ]
+      },
+      {
+        "id": "LT05",
+        "type": "PARTY",
+        "seatsTotal": 2,
+        "votesPercent": 12.56,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "GREENSEFA",
+            "seatsTotal": 2,
+            "seatsPercentEU": 0.27
+          }
+        ]
+      },
+      {
+        "id": "LT06",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 2.73,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "LT07",
+        "type": "PARTY",
+        "seatsTotal": 3,
+        "votesPercent": 19.74,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "EPP",
+            "seatsTotal": 3,
+            "seatsPercentEU": 0.4
+          }
+        ]
+      },
+      {
+        "id": "LT08",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 5.13,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "LT09",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 2.36,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "LT10",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 2.27,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "LT11",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 1.92,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "LT12",
+        "type": "PARTY",
+        "seatsTotal": 1,
+        "votesPercent": 6.51,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "EPP",
+            "seatsTotal": 1,
+            "seatsPercentEU": 0.13
+          }
+        ]
+      },
+      {
+        "id": "LT13",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 4.0,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "LT14",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 3.35,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "LT90",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 2.47,
+        "members": null,
+        "groupDistribution": null
+      }
+    ]
+  }
+}

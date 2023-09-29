@@ -4,7 +4,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="text-area"></div>
+    <div>
+      <h2 id="country-name"></h2>
+      <div id="text-area"></div>
+    </div>
 </body>
 <script src="d3.js"></script>
 <script type="module">
@@ -64,6 +67,7 @@ d3.json(geoJsonUrl).then(geojson => {
       .attr("country-code", d => d.id)
       .attr("eu-state", d => d.properties.EU_STAT)
       .attr("method", d => d.properties.method)
+      .attr("name", d => d.properties.NAME_ENGL)
     // .append("title")
     //   .text(d => d.properties.CNTR_ID);
 })
@@ -77,6 +81,7 @@ Object.assign(svg.node(), {
       d3.select(event.target).attr('fill', '#004494');
       
       document.getElementById("text-area").innerHTML = event.target.getAttribute("method")
+      document.getElementById("country-name").innerHTML = event.target.getAttribute("name")
     }
   }
 })

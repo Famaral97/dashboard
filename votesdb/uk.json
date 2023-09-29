@@ -1,0 +1,257 @@
+{
+  "id": "UK",
+  "parentDivision": null,
+  "districts": [
+    "GB",
+    "NI"
+  ],
+  "seatsTotal": 73,
+  "seatsPercentEU": 9.72,
+  "groupSummary": {
+    "title": "SEATS_BY_GROUP_TITLE",
+    "status": "CONSTITUTIVE",
+    "time": "2019-07-02T10:00:00.000+0200",
+    "groupDistribution": [
+      {
+        "id": "SD",
+        "seatsTotal": 10,
+        "seatsPercentEU": 1.33
+      },
+      {
+        "id": "ECR",
+        "seatsTotal": 4,
+        "seatsPercentEU": 0.53
+      },
+      {
+        "id": "ALDE",
+        "seatsTotal": 17,
+        "seatsPercentEU": 2.26
+      },
+      {
+        "id": "GUENGL",
+        "seatsTotal": 1,
+        "seatsPercentEU": 0.13
+      },
+      {
+        "id": "GREENSEFA",
+        "seatsTotal": 11,
+        "seatsPercentEU": 1.46
+      },
+      {
+        "id": "NA",
+        "seatsTotal": 30,
+        "seatsPercentEU": 3.99
+      }
+    ]
+  },
+  "partySummary": {
+    "breakdownByPartyHeader": {
+      "title": "BREAKDOWN_BY_PARTY_TITLE",
+      "status": "CONSTITUTIVE",
+      "time": "2019-07-02T10:00:00.000+0200"
+    },
+    "resultsByPartyHeader": {
+      "title": "RESULTS_BY_PARTY_TITLE",
+      "status": "OFFICIAL",
+      "time": "2019-10-22T11:30:15.365+0200"
+    },
+    "seatsByParty": [
+      {
+        "id": "UK01",
+        "type": "PARTY",
+        "seatsTotal": 1,
+        "votesPercent": 0.59,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "GUENGL",
+            "seatsTotal": 1,
+            "seatsPercentEU": 0.13
+          }
+        ]
+      },
+      {
+        "id": "UK02",
+        "type": "PARTY",
+        "seatsTotal": 1,
+        "votesPercent": 0.6,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "NA",
+            "seatsTotal": 1,
+            "seatsPercentEU": 0.13
+          }
+        ]
+      },
+      {
+        "id": "UK03",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 0.25,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "UK04",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 0.37,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "UK05",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 0.3,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "UK06",
+        "type": "PARTY",
+        "seatsTotal": 1,
+        "votesPercent": 0.51,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "ALDE",
+            "seatsTotal": 1,
+            "seatsPercentEU": 0.13
+          }
+        ]
+      },
+      {
+        "id": "UK07",
+        "type": "PARTY",
+        "seatsTotal": 4,
+        "votesPercent": 8.86,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "ECR",
+            "seatsTotal": 4,
+            "seatsPercentEU": 0.53
+          }
+        ]
+      },
+      {
+        "id": "UK08",
+        "type": "PARTY",
+        "seatsTotal": 10,
+        "votesPercent": 13.74,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "SD",
+            "seatsTotal": 10,
+            "seatsPercentEU": 1.33
+          }
+        ]
+      },
+      {
+        "id": "UK09",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 3.22,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "UK10",
+        "type": "PARTY",
+        "seatsTotal": 3,
+        "votesPercent": 3.51,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "GREENSEFA",
+            "seatsTotal": 3,
+            "seatsPercentEU": 0.4
+          }
+        ]
+      },
+      {
+        "id": "UK11",
+        "type": "PARTY",
+        "seatsTotal": 1,
+        "votesPercent": 0.97,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "GREENSEFA",
+            "seatsTotal": 1,
+            "seatsPercentEU": 0.13
+          }
+        ]
+      },
+      {
+        "id": "UK12",
+        "type": "PARTY",
+        "seatsTotal": 16,
+        "votesPercent": 19.78,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "ALDE",
+            "seatsTotal": 16,
+            "seatsPercentEU": 2.13
+          }
+        ]
+      },
+      {
+        "id": "UK13",
+        "type": "PARTY",
+        "seatsTotal": 7,
+        "votesPercent": 11.78,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "GREENSEFA",
+            "seatsTotal": 7,
+            "seatsPercentEU": 0.93
+          }
+        ]
+      },
+      {
+        "id": "UK14",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 3.31,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "UK15",
+        "type": "PARTY",
+        "seatsTotal": 29,
+        "votesPercent": 30.79,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "NA",
+            "seatsTotal": 29,
+            "seatsPercentEU": 3.86
+          }
+        ]
+      },
+      {
+        "id": "UK90",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 0.1,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "UK91",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 1.48,
+        "members": null,
+        "groupDistribution": null
+      }
+    ]
+  }
+}

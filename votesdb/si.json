@@ -1,0 +1,187 @@
+{
+  "id": "SI",
+  "parentDivision": null,
+  "districts": null,
+  "seatsTotal": 8,
+  "seatsPercentEU": 1.07,
+  "groupSummary": {
+    "title": "SEATS_BY_GROUP_TITLE",
+    "status": "CONSTITUTIVE",
+    "time": "2019-07-02T10:00:00.000+0200",
+    "groupDistribution": [
+      {
+        "id": "EPP",
+        "seatsTotal": 4,
+        "seatsPercentEU": 0.53
+      },
+      {
+        "id": "SD",
+        "seatsTotal": 2,
+        "seatsPercentEU": 0.27
+      },
+      {
+        "id": "ALDE",
+        "seatsTotal": 2,
+        "seatsPercentEU": 0.27
+      }
+    ]
+  },
+  "partySummary": {
+    "breakdownByPartyHeader": {
+      "title": "BREAKDOWN_BY_PARTY_TITLE",
+      "status": "CONSTITUTIVE",
+      "time": "2019-07-02T10:00:00.000+0200"
+    },
+    "resultsByPartyHeader": {
+      "title": "RESULTS_BY_PARTY_TITLE",
+      "status": "OFFICIAL",
+      "time": "2019-09-25T18:12:30.415+0200"
+    },
+    "seatsByParty": [
+      {
+        "id": "SI01",
+        "type": "PARTY",
+        "seatsTotal": 3,
+        "votesPercent": 26.25,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "EPP",
+            "seatsTotal": 3,
+            "seatsPercentEU": 0.4
+          }
+        ]
+      },
+      {
+        "id": "SI02",
+        "type": "PARTY",
+        "seatsTotal": 2,
+        "votesPercent": 18.66,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "SD",
+            "seatsTotal": 2,
+            "seatsPercentEU": 0.27
+          }
+        ]
+      },
+      {
+        "id": "SI03",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 5.67,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "SI04",
+        "type": "PARTY",
+        "seatsTotal": 1,
+        "votesPercent": 11.12,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "EPP",
+            "seatsTotal": 1,
+            "seatsPercentEU": 0.13
+          }
+        ]
+      },
+      {
+        "id": "SI05",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 4.01,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "SI06",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 1.62,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "SI07",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 4.02,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "SI08",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 6.43,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "SI09",
+        "type": "PARTY",
+        "seatsTotal": 2,
+        "votesPercent": 15.44,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "ALDE",
+            "seatsTotal": 2,
+            "seatsPercentEU": 0.27
+          }
+        ]
+      },
+      {
+        "id": "SI10",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 1.7,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "SI11",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 1.66,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "SI12",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 0.52,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "SI13",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 0.68,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "SI14",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 2.22,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "SI90",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 0.0,
+        "members": null,
+        "groupDistribution": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "id": "FR",
+  "parentDivision": null,
+  "districts": null,
+  "seatsTotal": 74,
+  "seatsPercentEU": 9.85,
+  "groupSummary": {
+    "title": "SEATS_BY_GROUP_TITLE",
+    "status": "CONSTITUTIVE",
+    "time": "2019-07-02T10:00:00.000+0200",
+    "groupDistribution": [
+      {
+        "id": "EPP",
+        "seatsTotal": 8,
+        "seatsPercentEU": 1.07
+      },
+      {
+        "id": "SD",
+        "seatsTotal": 5,
+        "seatsPercentEU": 0.67
+      },
+      {
+        "id": "ALDE",
+        "seatsTotal": 21,
+        "seatsPercentEU": 2.8
+      },
+      {
+        "id": "GUENGL",
+        "seatsTotal": 6,
+        "seatsPercentEU": 0.8
+      },
+      {
+        "id": "GREENSEFA",
+        "seatsTotal": 12,
+        "seatsPercentEU": 1.6
+      },
+      {
+        "id": "ENF",
+        "seatsTotal": 22,
+        "seatsPercentEU": 2.93
+      }
+    ]
+  },
+  "partySummary": {
+    "breakdownByPartyHeader": {
+      "title": "BREAKDOWN_BY_PARTY_TITLE",
+      "status": "CONSTITUTIVE",
+      "time": "2019-07-02T10:00:00.000+0200"
+    },
+    "resultsByPartyHeader": {
+      "title": "RESULTS_BY_PARTY_TITLE",
+      "status": "OFFICIAL",
+      "time": "2019-09-25T18:12:30.415+0200"
+    },
+    "seatsByParty": [
+      {
+        "id": "FR01",
+        "type": "PARTY",
+        "seatsTotal": 6,
+        "votesPercent": 6.31,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "GUENGL",
+            "seatsTotal": 6,
+            "seatsPercentEU": 0.8
+          }
+        ]
+      },
+      {
+        "id": "FR02",
+        "type": "PARTY",
+        "seatsTotal": 5,
+        "votesPercent": 6.19,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "SD",
+            "seatsTotal": 5,
+            "seatsPercentEU": 0.67
+          }
+        ]
+      },
+      {
+        "id": "FR03",
+        "type": "PARTY",
+        "seatsTotal": 12,
+        "votesPercent": 13.47,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "GREENSEFA",
+            "seatsTotal": 12,
+            "seatsPercentEU": 1.6
+          }
+        ]
+      },
+      {
+        "id": "FR04",
+        "type": "PARTY",
+        "seatsTotal": 8,
+        "votesPercent": 8.48,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "EPP",
+            "seatsTotal": 8,
+            "seatsPercentEU": 1.07
+          }
+        ]
+      },
+      {
+        "id": "FR05",
+        "type": "PARTY",
+        "seatsTotal": 22,
+        "votesPercent": 23.34,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "ENF",
+            "seatsTotal": 22,
+            "seatsPercentEU": 2.93
+          }
+        ]
+      },
+      {
+        "id": "FR06",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 3.51,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "FR07",
+        "type": "PARTY",
+        "seatsTotal": 21,
+        "votesPercent": 22.42,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "ALDE",
+            "seatsTotal": 21,
+            "seatsPercentEU": 2.8
+          }
+        ]
+      },
+      {
+        "id": "FR08",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 2.49,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "FR09",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 2.5,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "FR10",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 3.27,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "FR90",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 8.02,
+        "members": null,
+        "groupDistribution": null
+      }
+    ]
+  }
+}

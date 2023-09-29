@@ -1,0 +1,131 @@
+{
+  "id": "CY",
+  "parentDivision": null,
+  "districts": null,
+  "seatsTotal": 6,
+  "seatsPercentEU": 0.8,
+  "groupSummary": {
+    "title": "SEATS_BY_GROUP_TITLE",
+    "status": "CONSTITUTIVE",
+    "time": "2019-07-02T10:00:00.000+0200",
+    "groupDistribution": [
+      {
+        "id": "EPP",
+        "seatsTotal": 2,
+        "seatsPercentEU": 0.27
+      },
+      {
+        "id": "SD",
+        "seatsTotal": 2,
+        "seatsPercentEU": 0.27
+      },
+      {
+        "id": "GUENGL",
+        "seatsTotal": 2,
+        "seatsPercentEU": 0.27
+      }
+    ]
+  },
+  "partySummary": {
+    "breakdownByPartyHeader": {
+      "title": "BREAKDOWN_BY_PARTY_TITLE",
+      "status": "CONSTITUTIVE",
+      "time": "2019-07-02T10:00:00.000+0200"
+    },
+    "resultsByPartyHeader": {
+      "title": "RESULTS_BY_PARTY_TITLE",
+      "status": "OFFICIAL",
+      "time": "2019-09-25T18:12:30.415+0200"
+    },
+    "seatsByParty": [
+      {
+        "id": "CY01",
+        "type": "PARTY",
+        "seatsTotal": 2,
+        "votesPercent": 29.02,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "EPP",
+            "seatsTotal": 2,
+            "seatsPercentEU": 0.27
+          }
+        ]
+      },
+      {
+        "id": "CY02",
+        "type": "PARTY",
+        "seatsTotal": 2,
+        "votesPercent": 27.49,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "GUENGL",
+            "seatsTotal": 2,
+            "seatsPercentEU": 0.27
+          }
+        ]
+      },
+      {
+        "id": "CY03",
+        "type": "PARTY",
+        "seatsTotal": 1,
+        "votesPercent": 13.8,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "SD",
+            "seatsTotal": 1,
+            "seatsPercentEU": 0.13
+          }
+        ]
+      },
+      {
+        "id": "CY04",
+        "type": "PARTY",
+        "seatsTotal": 1,
+        "votesPercent": 10.58,
+        "members": null,
+        "groupDistribution": [
+          {
+            "id": "SD",
+            "seatsTotal": 1,
+            "seatsPercentEU": 0.13
+          }
+        ]
+      },
+      {
+        "id": "CY05",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 8.25,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "CY06",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 3.29,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "CY07",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 3.8,
+        "members": null,
+        "groupDistribution": null
+      },
+      {
+        "id": "CY90",
+        "type": "PARTY",
+        "seatsTotal": 0,
+        "votesPercent": 3.77,
+        "members": null,
+        "groupDistribution": null
+      }
+    ]
+  }
+}
