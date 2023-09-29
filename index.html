@@ -54,8 +54,6 @@ d3.json(geoJsonUrl).then(geojson => {
     country.properties.EU_STAT === "T"
   )
 
-  console.log(geojson.features)
-
   svg.selectAll("path")
   .data(geojson.features)
     .join("path")
@@ -72,8 +70,9 @@ d3.json(geoJsonUrl).then(geojson => {
 Object.assign(svg.node(), {
   value: null,
   onclick: event => {
-    if (event.target.tagName == 'path') {
-      svg.selectAll("path").attr("fill", "#BFD0E4");
+    if (event.target.tagName === 'path' &&
+        event.target.attributes.getNamedItem("eu-state").value === "T") {
+      svg.selectAll("path[eu-state=T]").attr("fill", country => country.properties.Color);
       d3.select(event.target).attr('fill', '#004494');
       
       document.getElementById("text-area").innerHTML = event.target.getAttribute("country-code")
