@@ -63,6 +63,7 @@ d3.json(geoJsonUrl).then(geojson => {
       .attr("stroke-linejoin", "round")
       .attr("country-code", d => d.id)
       .attr("eu-state", d => d.properties.EU_STAT)
+      .attr("method", d => d.properties.method)
     // .append("title")
     //   .text(d => d.properties.CNTR_ID);
 })
@@ -71,11 +72,11 @@ Object.assign(svg.node(), {
   value: null,
   onclick: event => {
     if (event.target.tagName === 'path' &&
-        event.target.attributes.getNamedItem("eu-state").value === "T") {
+        event.target.getAttribute("eu-state") === "T") {
       svg.selectAll("path[eu-state=T]").attr("fill", country => country.properties.Color);
       d3.select(event.target).attr('fill', '#004494');
       
-      document.getElementById("text-area").innerHTML = event.target.getAttribute("country-code")
+      document.getElementById("text-area").innerHTML = event.target.getAttribute("method")
     }
   }
 })
