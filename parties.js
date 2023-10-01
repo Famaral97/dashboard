@@ -14,6 +14,8 @@ function generatePartyTable(countryCode, tableBodyId, partyNames) {
     d3.json(`https://raw.githubusercontent.com/Famaral97/dashboard/master/votesdb/${countryCode.toLowerCase()}.json`).then(data => {
         let partiesTable = document.getElementById(tableBodyId)
         partiesTable.innerHTML = ""
+        let totalSeats = data.seatsTotal
+        let votesByParty = {}
         data.partySummary.seatsByParty.map((p) => {
             let row = document.createElement("tr")
 
@@ -32,7 +34,8 @@ function generatePartyTable(countryCode, tableBodyId, partyNames) {
             if (partyAcronym === "Other parties") partyAcronym = "Outros"
             row.insertCell(0).innerHTML = partyAcronym
             partiesTable.appendChild(row)
+            if (partyAcronym !== "Outros") votesByParty[partyAcronym] = p.votesPercent
         })
-        
+        console.log(hondt(votesByParty, totalSeats))
       })
 }
