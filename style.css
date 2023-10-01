@@ -2,3 +2,7 @@ body {
     display: flex;
     flex-direction: row-reverse;
 }
+
+td {
+    border: 1px solid;
+  }

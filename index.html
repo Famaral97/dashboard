@@ -12,8 +12,8 @@
     <table>
       <thead>
         <th>Partido Nacional</th>
-        <th>Partido Europeu</th>
         <th>% Votos</th>
+        <th>Partido Europeu</th>
       </thead>
       <tbody id="results-2019">
 
@@ -98,20 +98,7 @@ Object.assign(svg.node(), {
       console.log(event.target.getAttribute("country-code"))
 
       const countryCode = event.target.getAttribute("country-code")
-
-      d3.json(`https://raw.githubusercontent.com/Famaral97/dashboard/master/votesdb/${countryCode.toLowerCase()}.json`).then(data => {
-        let partiesTable = document.getElementById("results-2019")
-        partiesTable.innerHTML = ""
-        data.partySummary.seatsByParty.map((p) => {
-          let row = document.createElement("tr")
-          row.insertCell(0).innerHTML = p.votesPercent
-          row.insertCell(0).innerHTML = p.groupDistribution === null ? "Sem Afiliação" : p.groupDistribution[0].id
-          row.insertCell(0).innerHTML = partyNames.find((c) => c.countryId === countryCode).candidates.find((party) => party.candidateId === p.id).candidateAcronym
-          partiesTable.appendChild(row)
-        })
-        
-      })
-
+      generatePartyTable(countryCode, "results-2019", partyNames)
       // document.getElementById("results-2019").innerHTML = event.target.getAttribute("contry-code")
     }
   }
