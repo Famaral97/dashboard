@@ -26,3 +26,7 @@ function hondt(votesByParty, mandates) {
 function webster(votesByParty, mandates) {
     return divisorMethod(votesByParty, mandates, (seats) => seats + 0.5)
 }
+
+function huntingtonHill(votesByParty, mandates) {
+    return divisorMethod(votesByParty, mandates, (seats) => Math.sqrt(seats * (seats + 1)))
+}

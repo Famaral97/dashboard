@@ -4,11 +4,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <div id="dashboard-info">
       <h2 id="country-name"></h2>
       <div id="text-area"></div>
+      <br><br><br><br>
+      <div id="customization-menu">
+        <div><input type="checkbox" id="hondt"/>Método de Hondt (1 círculo)</div>
+        <div><input type="checkbox" id="webster"/>Método de Webster (1 círculo)</div>
+        <div><input type="checkbox" id="huntington-hill"/>Método de Huntington-Hill (1 círculo)</div>
+      </div>
     </div>
-    <h3>2019 Election Results</h3>
     <table>
       <thead>
         <th>Partido Nacional</th>
@@ -20,10 +25,7 @@
       </tbody>
     </table>
 
-    <div id="customization-menu">
-      <input type="checkbox" id="hondt">Método de Hondt (1 círculo)</input>
-      <input type="checkbox" id="webster">Método de Webster (1 círculo)</input>
-    </div>
+    
 </body>
 <script src="d3.js"></script>
 <script src="parties.js"></script>

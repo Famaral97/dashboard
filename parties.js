@@ -74,5 +74,6 @@ function generatePartyTable(countryCode, tableBodyId, partyNames) {
 
         enableElectionMethod(partiesTable, votesByParty, totalSeats, hondt, "hondt")
         enableElectionMethod(partiesTable, votesByParty, totalSeats, webster, "webster")
+        enableElectionMethod(partiesTable, votesByParty, totalSeats, huntingtonHill, "huntington-hill")
     })
 }

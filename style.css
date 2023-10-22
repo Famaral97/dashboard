@@ -5,4 +5,10 @@ body {
 
 td {
     border: 1px solid;
-  }
+}
+
+div#dashboard-info,
+div#customization-menu {
+    display: flex;
+    flex-direction: column;
+}
