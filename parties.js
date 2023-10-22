@@ -10,6 +10,41 @@ async function getParties() {
     }
 }
 
+function addElectionResultsColumnByMethod(table, votesByParty, totalSeats, method, methodName) {
+    const electionResults = method(votesByParty, totalSeats)
+
+    for (let row of table.rows) {
+        let newCell = row.insertCell(-1)
+        newCell.className = `${methodName}-column`
+        newCell.innerHTML = electionResults[row.cells[0].innerText] ?? 0
+    }
+}
+
+function removeElectionResultsColumnByMethod(table, methodName) {
+    for (let row of table.rows) {
+        for (let i = 0; i < row.cells.length; i++) {
+            if (row.cells[i].className === `${methodName}-column`) {
+                row.deleteCell(i)
+            }
+        }
+    }
+}
+
+function enableElectionMethod(partiesTable, votesByParty, totalSeats, method, methodName) {
+    let option = document.getElementById(methodName)
+        
+    option.checked = false
+    option.addEventListener("change", function() {
+        if (this.checked) {
+            removeElectionResultsColumnByMethod(partiesTable, methodName)
+            addElectionResultsColumnByMethod(partiesTable, votesByParty, totalSeats, method, methodName)
+        } else {
+            removeElectionResultsColumnByMethod(partiesTable, methodName)
+        }
+    })
+}
+
+
 function generatePartyTable(countryCode, tableBodyId, partyNames) {
     d3.json(`https://raw.githubusercontent.com/Famaral97/dashboard/master/votesdb/${countryCode.toLowerCase()}.json`).then(data => {
         let partiesTable = document.getElementById(tableBodyId)
@@ -36,6 +71,8 @@ function generatePartyTable(countryCode, tableBodyId, partyNames) {
             partiesTable.appendChild(row)
             if (partyAcronym !== "Outros") votesByParty[partyAcronym] = p.votesPercent
         })
-        console.log(hondt(votesByParty, totalSeats))
-      })
+
+        enableElectionMethod(partiesTable, votesByParty, totalSeats, hondt, "hondt")
+        enableElectionMethod(partiesTable, votesByParty, totalSeats, webster, "webster")
+    })
 }
